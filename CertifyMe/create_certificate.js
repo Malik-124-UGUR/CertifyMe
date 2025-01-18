@@ -54,9 +54,9 @@ async function createCertificates() {
 
         // Calculate the x and y coordinates for the text placement
         const x = (imageWidth - textWidth) / 2; 
-        const y = (imageHeight / 2) - (textHeight / 2);
+        const y = (imageHeight / 2) - (textHeight / 2) - 50;
         
-        doc.text(`${text}`, x, y - 50); // Place the text on the certificate
+        doc.text(`${text}`, x, y); // Place the text on the certificate
         
         // Finish the PDF document
         doc.end();
